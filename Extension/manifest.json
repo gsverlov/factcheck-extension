@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Fact Check (dev)",
+  "version": "0.1.0",
+  "description": "Checks factual accuracy of pages and YouTube transcripts.",
+  "permissions": ["nativeMessaging", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

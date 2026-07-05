@@ -1,0 +1,9 @@
+{
+  "name": "com.factcheck.host",
+  "description": "Fact Check native host",
+  "path": "C:\\dev\\factextension\\NativeHost\\run_host.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://gfjgnpekndjffgecbikcggmdmbgjcnej/"
+  ]
+}
