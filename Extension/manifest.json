@@ -1,13 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Fact Check (dev)",
-  "version": "0.1.0",
-  "description": "Checks factual accuracy of pages and YouTube transcripts.",
+  "name": "Fact Check",
+  "version": "0.2.0",
+  "description": "Underlines false (red) and misleading (yellow) claims in the article you're reading, with an explanation on hover.",
+  "minimum_chrome_version": "105",
   "permissions": ["nativeMessaging", "scripting", "activeTab"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Fact-check this article"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+F" },
+      "description": "Fact-check this article"
+    }
   }
 }
